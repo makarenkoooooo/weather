@@ -1,6 +1,6 @@
 import { saveToLocalStorage, getFromLocalStorage } from "./storage.js";
 
-const serverUrl = "http://api.openweathermap.org/data/2.5";
+const serverUrl = "https://api.openweathermap.org/data/2.5";
 const cityName = document.getElementById("input-country");
 const apiKey = "f660a2fb1e4bad108d6160b7f58c555f";
 
@@ -52,7 +52,7 @@ function updateHourlyForecast(data) {
       <p>${time}</p>
       <p>Temperature: <span>${temp}°</span></p>
       <p>Feels like: <span>${feelsLike}°</span></p>
-      <img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon" width="30" />
+      <img src="https://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon" width="30" />
     `;
     hourlyForecastContainer.appendChild(hour);
   });
